@@ -1,0 +1,304 @@
+/* Container and Layout Styles */
+.lists-container {
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+}
+
+.create-container {
+  align-self: flex-end;
+  margin: 1rem 0;
+}
+
+.table-container,
+.movie-lists {
+  width: 100%;
+}
+
+.table-container {
+  text-align: center;
+}
+
+/* Button Styling (Unified Design) */
+button {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(135deg, #ff6b6b, #f94d94);
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 5px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #f94d94, #ff6b6b);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  background: linear-gradient(135deg, #555, #888);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Specific Button Variants */
+.delete {
+  background: linear-gradient(135deg, #ff4d6d, #e6004d);
+}
+
+.delete:hover {
+  background: linear-gradient(135deg, #ff7b92, #ff0066);
+}
+
+.edit {
+  background: linear-gradient(135deg, #ffba08, #ff8800);
+}
+
+.edit:hover {
+  background: linear-gradient(135deg, #ffd047, #ff9933);
+}
+
+.create {
+  background: linear-gradient(135deg, #6a00f4, #b000f4);
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+
+.create:hover {
+  background: linear-gradient(135deg, #8a33f4, #d64df4);
+}
+
+/* Specific Section Styling */
+.body {
+  width: 400px;
+}
+
+.searched-movie {
+  max-height: 200px;
+  overflow-y: hidden;
+}
+
+.search-container {
+  margin-bottom: 10px;
+}
+
+.search-container p:hover {
+  background-color: lightblue;
+}
+
+.container {
+  width: 70%;
+}
+
+.movie-details {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.poster-image {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+  background-color: blue;
+  height: 30px;
+}
+
+.form-fields {
+  flex: 1;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.field input,
+.field textarea {
+  width: 70.3vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input:disabled,
+.field textarea:disabled {
+  background-color: #f5f5f5;
+}
+
+/* Video and Cast Styles */
+.videos, .cast {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.video-item, .cast-item {
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.cast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #282c3488;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 120px; /* Matches the image size with padding */
+}
+
+.cast-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cast-item img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #ff6b6b; /* Dynamic highlight */
+  transition: border-color 0.3s ease;
+}
+
+.cast-item:hover img {
+  border-color: #f94d94;
+}
+
+.cast-item p {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Form and Button Styles */
+.btn-save {
+  display: block;
+  width: 85.5vw;
+  background: linear-gradient(135deg, #ff6b6b, #f94d94);
+  padding: 0.75rem;
+  text-align: center;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-save:hover {
+  background: linear-gradient(135deg, #f94d94, #ff6b6b);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cancel {
+  display: block;
+  width: 85.5vw;
+  background: linear-gradient(135deg, #222222, #555555);
+  padding: 0.75rem;
+  text-align: center;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 10px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cancel:hover {
+  background: linear-gradient(135deg, #555555, #222222);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Pagination Button Styles */
+.pagination-button {
+  background: linear-gradient(135deg, #ff6b6b, #f94d94);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: 100px;
+  margin-top: 8px;
+  margin-inline: 5px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pagination-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #f94d94, #ff6b6b);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pagination-button:disabled {
+  background: linear-gradient(135deg, #555, #888);
+  cursor: not-allowed;
+}
+
+/* Movie Photo Styles */
+.movie-photos {
+  margin-top: 20px;
+}
+
+.photo {
+  max-width: 200px;
+  margin-right: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+}

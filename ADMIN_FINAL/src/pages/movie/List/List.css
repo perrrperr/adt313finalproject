@@ -1,0 +1,142 @@
+/* General Container Styling */
+.lists-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #212121; /* Dark background with a contemporary vibe */
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Larger, more pronounced shadow */
+  margin-top: 30px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.lists-container:hover {
+  transform: scale(1.02); /* Subtle scale effect on hover */
+}
+
+/* Create Container */
+.create-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+.create-container button {
+  background-color: #ff5722; /* Vibrant orange */
+  padding: 12px 20px;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-container button:hover {
+  background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Table Container */
+.table-container {
+  margin-top: 30px;
+}
+
+.movie-lists {
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  color: #ffffff;
+}
+
+.movie-lists th,
+.movie-lists td {
+  padding: 18px 24px;
+  text-align: left;
+}
+
+.movie-lists th {
+  background-color: #333333; /* Lightened dark background for header */
+  color: #fafafa;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.movie-lists td {
+  background-color: #424242; /* Slightly lighter row for better contrast */
+}
+
+.movie-lists tr:nth-child(even) td {
+  background-color: #565656; /* Alternating row colors for readability */
+}
+
+.movie-lists tr:hover {
+  background-color: #757575; /* Hover effect for rows */
+  transition: background-color 0.3s ease;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.delete {
+  background: linear-gradient(90deg, #ff5252, #e91e63); /* Soft red gradient */
+}
+
+.delete:hover {
+  background: linear-gradient(90deg, #ff4081, #d50000);
+}
+
+.edit {
+  background: linear-gradient(90deg, #ffeb3b, #ff9800); /* Warm yellow to orange gradient */
+}
+
+.edit:hover {
+  background: linear-gradient(90deg, #ffb300, #f57c00);
+}
+
+.create {
+  background: linear-gradient(90deg, #3f51b5, #1a237e); /* Blue to deep purple gradient */
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.create:hover {
+  background: linear-gradient(90deg, #5c6bc0, #3949ab); /* Lighter blue gradient on hover */
+}
+
+.create:active {
+  background: linear-gradient(90deg, #3f51b5, #1a237e);
+  transform: scale(0.98);
+}
+
+.create:disabled {
+  background-color: #7a7a7a;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Cell Text Alignment */
+.title-cell {
+  text-align: justify;
+  word-wrap: break-word;
+  max-width: 350px; /* Adjust for appropriate column width */
+}

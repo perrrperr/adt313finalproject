@@ -1,0 +1,76 @@
+.Main .container {
+  display: flex;
+  width: 100vw;
+}
+
+.Main .container .outlet {
+  flex-grow: 1; /* Adjusted for better layout balance */
+  padding: 2rem;
+  background-color: #f4f4f4; /* Light background for the content */
+  min-height: 100vh; /* Ensure the content takes up full height */
+}
+
+.Main .container .navigation {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: #1e1e1e; /* Darker background for the sidebar */
+  color: #ffffff;
+  width: 220px; /* Slightly wider sidebar */
+  border-right: 2px solid #333333;
+  padding-top: 40px;
+  z-index: 1000;
+  transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.Main .container .navigation:hover {
+  background-color: #333333; /* Darker shade on hover */
+  width: 250px; /* Sidebar expands on hover */
+}
+
+.Main .container .navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Main .container .navigation ul li {
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.Main .container .navigation ul li:hover {
+  background-color: #444444; /* Hover effect for the list items */
+}
+
+.navigation ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align icons to the left */
+  font-size: 1.6rem; /* Increased icon size for better visibility */
+  padding: 12px;
+  text-decoration: none;
+  color: #ffffff; /* White text color for links */
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  color: #ff4500; /* Hover color effect */
+}
+
+.Main .container .navigation ul li.logout {
+  cursor: pointer;
+  margin-top: auto;
+  padding: 12px 24px;
+  background-color: #ff4500; /* Logout button color */
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Main .container .navigation ul li.logout:hover {
+  background-color: #e03e00; /* Darker color for logout on hover */
+}
+
